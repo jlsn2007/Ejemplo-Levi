@@ -38,7 +38,8 @@ public class ctrlMenu implements MouseListener {
         
         if(e.getSource() == panel.btniralfrm){
             vista.frmalquequieroir.initfrmalquequieroir();
-            vistaa.setVisible(false);
+            vistaa.dispose();
+         
         }
         
         
