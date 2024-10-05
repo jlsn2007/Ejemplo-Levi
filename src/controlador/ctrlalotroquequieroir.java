@@ -3,36 +3,34 @@ package controlador;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import vista.frmMenu;
-import vista.frmalquequieroir;
-import vista.panelinicial;
+import vista.frmalotroquequieroir;
+import vista.panelsecundario;
 
-
-public class ctrlalquequieroir implements MouseListener{
+public class ctrlalotroquequieroir implements MouseListener{
     
     frmMenu vistaa;
-    panelinicial panel;
-    frmalquequieroir vistaotrofrm;
-
+    panelsecundario spanel;
+    frmalotroquequieroir vistaalotrofrm;
     
-    public ctrlalquequieroir (frmalquequieroir Vistaotrofrm, frmMenu Vistaa, panelinicial Panel){
+    public ctrlalotroquequieroir (frmalotroquequieroir Vistaalotrofrm, frmMenu Vistaa, panelsecundario sPanel){
         
 
-        this.vistaotrofrm = Vistaotrofrm;
+        this.vistaalotrofrm = Vistaalotrofrm;
         this.vistaa = Vistaa;
-        this.panel = Panel;
+        this.spanel = sPanel;
         
-        panel.btniralfrm.addMouseListener(this);
+        spanel.btniralotrofrm.addMouseListener(this);
         vistaa.jpContenedor.addMouseListener(this);
-        vistaotrofrm.btniralmenu.addMouseListener(this);
+        vistaalotrofrm.btnregresarcalen.addMouseListener(this);
 
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
         
-        if(e.getSource() == vistaotrofrm.btniralmenu){
+        if(e.getSource() == vistaalotrofrm.btnregresarcalen){
             System.out.println("Se dio click en el botón para volver al frmmenu");
-            vistaotrofrm.dispose();
+            vistaalotrofrm.dispose();
         }
         
     }
@@ -56,4 +54,5 @@ public class ctrlalquequieroir implements MouseListener{
     public void mouseExited(MouseEvent e) {
 
     }
+    
 }

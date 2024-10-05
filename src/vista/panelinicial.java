@@ -30,16 +30,16 @@ public class panelinicial extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(295, 295, 295)
+                .addGap(353, 353, 353)
                 .addComponent(btniralfrm)
-                .addContainerGap(327, Short.MAX_VALUE))
+                .addContainerGap(376, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(169, 169, 169)
+                .addGap(177, 177, 177)
                 .addComponent(btniralfrm)
-                .addContainerGap(195, Short.MAX_VALUE))
+                .addContainerGap(208, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

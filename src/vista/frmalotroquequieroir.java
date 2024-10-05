@@ -1,52 +1,50 @@
 package vista;
 
-import controlador.ctrlalquequieroir;
+import controlador.ctrlalotroquequieroir;
 
 
-public class frmalquequieroir extends javax.swing.JFrame {
+public class frmalotroquequieroir extends javax.swing.JFrame {
 
 
-    public frmalquequieroir() {
+    public frmalotroquequieroir() {
         initComponents();
         this.setLocationRelativeTo(this);
     }
     
-    public static void initfrmalquequieroir(){
+    public static void initfrmalotroquequieroir(){
         frmMenu vista = new frmMenu();
-        panelinicial panel = new panelinicial();
-        frmalquequieroir vista2 = new frmalquequieroir();
+        panelsecundario spanel = new panelsecundario();
+        frmalotroquequieroir vista2 = new frmalotroquequieroir();
 
-        ctrlalquequieroir controlador = new ctrlalquequieroir(vista2, vista, panel);
+        ctrlalotroquequieroir controlador = new ctrlalotroquequieroir(vista2, vista, spanel);
         
         vista2.setVisible(true);
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panel2 = new javax.swing.JPanel();
-        btniralmenu = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        btnregresarcalen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 0, 0));
 
-        panel2.setBackground(new java.awt.Color(204, 255, 204));
-        panel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btniralmenu.setText("btn ir a menu");
-        panel2.add(btniralmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, -1, -1));
+        btnregresarcalen.setText("regresar al calendario");
+        jPanel1.add(btnregresarcalen, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, 865, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 865, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
         );
 
         pack();
@@ -69,25 +67,26 @@ public class frmalquequieroir extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmalquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmalotroquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmalquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmalotroquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmalquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmalotroquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmalquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmalotroquequieroir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                initfrmalquequieroir();
+                new frmalotroquequieroir().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btniralmenu;
-    public javax.swing.JPanel panel2;
+    public javax.swing.JButton btnregresarcalen;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

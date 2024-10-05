@@ -28,6 +28,7 @@ public class frmMenu extends javax.swing.JFrame {
         jpContenedor = new javax.swing.JPanel();
         jpmenu = new javax.swing.JPanel();
         btnprincipal = new javax.swing.JButton();
+        btnSecundario = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -41,12 +42,15 @@ public class frmMenu extends javax.swing.JFrame {
         btnprincipal.setText("Principal");
         jpmenu.add(btnprincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 20, -1, -1));
 
+        btnSecundario.setText("Secundario");
+        jpmenu.add(btnSecundario, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jpContenedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jpmenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpmenu, javax.swing.GroupLayout.DEFAULT_SIZE, 805, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,6 +98,7 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnSecundario;
     public javax.swing.JButton btnprincipal;
     public javax.swing.JPanel jpContenedor;
     private javax.swing.JPanel jpmenu;
