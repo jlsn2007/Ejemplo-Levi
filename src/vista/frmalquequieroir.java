@@ -15,8 +15,10 @@ public class frmalquequieroir extends javax.swing.JFrame {
         frmMenu vista = new frmMenu();
         panelinicial panel = new panelinicial();
         frmalquequieroir vista2 = new frmalquequieroir();
+        frmalotroquequieroir vista3 = new frmalotroquequieroir();
+        panelsecundario panel2 = new panelsecundario();
 
-        ctrlalquequieroir controlador = new ctrlalquequieroir(vista2, vista, panel);
+        ctrlalquequieroir controlador = new ctrlalquequieroir(vista2, vista, panel, vista3, panel2);
         
         vista2.setVisible(true);
     }

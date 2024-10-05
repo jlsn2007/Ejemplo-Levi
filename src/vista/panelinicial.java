@@ -11,8 +11,10 @@ public class panelinicial extends javax.swing.JPanel {
         panelinicial panel = this;
         frmMenu vista = new frmMenu();
         frmalquequieroir vista2 = new frmalquequieroir();
+        frmalotroquequieroir vista3 = new frmalotroquequieroir();
+        panelsecundario panel2 = new panelsecundario();
         
-        ctrlMenu controlador = new ctrlMenu(vista, panel, vista2);
+        ctrlMenu controlador = new ctrlMenu(vista, panel, vista2, vista3, panel2);
     }
 
     @SuppressWarnings("unchecked")

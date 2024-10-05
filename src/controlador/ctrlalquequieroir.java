@@ -3,8 +3,10 @@ package controlador;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import vista.frmMenu;
+import vista.frmalotroquequieroir;
 import vista.frmalquequieroir;
 import vista.panelinicial;
+import vista.panelsecundario;
 
 
 public class ctrlalquequieroir implements MouseListener{
@@ -12,14 +14,17 @@ public class ctrlalquequieroir implements MouseListener{
     frmMenu vistaa;
     panelinicial panel;
     frmalquequieroir vistaotrofrm;
-
+    frmalotroquequieroir vistaalotrofrm;
+    panelsecundario secpanel;
     
-    public ctrlalquequieroir (frmalquequieroir Vistaotrofrm, frmMenu Vistaa, panelinicial Panel){
+    public ctrlalquequieroir (frmalquequieroir Vistaotrofrm, frmMenu Vistaa, panelinicial Panel, frmalotroquequieroir Vistaalotrofrm, panelsecundario secPanel){
         
 
         this.vistaotrofrm = Vistaotrofrm;
         this.vistaa = Vistaa;
         this.panel = Panel;
+        this.secpanel = secPanel;
+        this.vistaalotrofrm = Vistaalotrofrm;
         
         panel.btniralfrm.addMouseListener(this);
         vistaa.jpContenedor.addMouseListener(this);

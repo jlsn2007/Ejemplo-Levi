@@ -14,8 +14,10 @@ public class frmMenu extends javax.swing.JFrame {
         frmMenu vista = new frmMenu();
         panelinicial panel = new panelinicial();
         frmalquequieroir vista2 = new frmalquequieroir();
+        frmalotroquequieroir vista3 = new frmalotroquequieroir();
+        panelsecundario panel2 = new panelsecundario();
 
-        ctrlMenu controlador = new ctrlMenu(vista, panel, vista2);
+        ctrlMenu controlador = new ctrlMenu(vista, panel, vista2, vista3, panel2);
         
         vista.setVisible(true);
     }
